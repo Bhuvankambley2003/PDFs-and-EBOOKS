@@ -1,0 +1,1430 @@
+/*Poppins font start*/
+@font-face {
+    font-family: 'Rubik';
+    src: url('https://careerkarma.com/blog/new-blog/assets/fonts/iJWKBXyIfDnIV7nBrXw.woff2'); /* IE9 Compat Modes */
+    src: url('https://careerkarma.com/blog/new-blog/assets/fonts/iJWKBXyIfDnIV7nBrXw.woff2?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+    font-display: swap;
+}
+/* devanagari */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLDD4Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLBT5Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLBT5Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/poppins/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+/*Poppins fonts finish*/
+
+/*Rubik fonts started*/
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXO61F3f.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXq61F3f.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXy61F3f.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXC61F3f.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnX661A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXO61F3f.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXq61F3f.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXy61F3f.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXC61F3f.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnX661A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXO61F3f.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXq61F3f.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXy61F3f.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXC61F3f.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnX661A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXO61F3f.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXq61F3f.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXy61F3f.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXC61F3f.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnX661A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXO61F3f.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXq61F3f.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXy61F3f.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnXC61F3f.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWEBXyIfDnIV7nEnX661A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://careerkarma.com/blog/new-blog/assets/fonts/rubik/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+/*Rubik fonts started*/
+* {
+    font-family: Rubik;
+	color:#1B2733;
+}
+h1 {
+    color: rgba(27,39,51);
+    font-family: Poppins;
+    font-weight: 700;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 18px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: auto;
+    max-width: 70em;
+    padding: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation li {
+    margin-right: 20px;
+}
+video {
+    max-width: 100%;
+}
+a {
+    color: darkgrey;
+    text-decoration: none;
+}
+.story_sidebar {
+    height: 100%;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    top: 0;
+    flex: 0 30%;
+}
+.story_sidebar_card {
+    border: 1px solid lightgrey;
+}
+.sidebar {
+    height: 100%;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 3px;
+    top: 0;
+    position: sticky;
+    flex: 1 30%;
+}
+article ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+article li {
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+article h2 {
+    margin-top: 30px;
+}
+article a, .about_us a, .sitemap a {
+    font-weight: 600;
+    color: black;
+    border-bottom: 2px solid #3C91E6;
+}
+article a:hover, .about_us a:hover, .sitemap a:hover, .query_class_link:hover, .query_class_link:focus {
+    background-color: yellow;
+    border-bottom: 2px solid yellow;
+}
+nav a, .category_section_sidebar_page a, .home_list a, .author_name a, article a, h3 a, .next_previous a, .breadcrumbs a, .category a {
+    color: black;
+}
+#desktop_nav {
+    display: block;
+}
+.main_navigation a:last-child {
+    padding-top: 5px;
+}
+button {
+    background: none;
+    border: none;
+}
+main button, .ad7 button, input[type="submit"] {
+    background-color: #F96066;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+}
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: orange;
+    font-weight: 700;
+}
+footer {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.footer_inner {
+    display: flex;
+    padding: 30px;
+    margin: auto;
+    max-width: 70em;
+    margin-top: 30px;
+}
+.subheader button {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.main {
+    flex: 0 70%;
+}
+.footer_inner .main_list {
+    flex: 0 30%;
+}
+button {
+    font-size: 18px;
+}
+img {
+    max-width: 100%;
+}
+.footer_lists {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.head_list_item {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.footer_lists ul {
+    margin-right: 20px;
+    width: 30%;
+    margin-bottom: 50px;
+}
+.nav_inner .main_navigation {
+    display: flex;
+    max-width: 70em;
+    margin: auto;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+.main_navigation a, .main_navigation button {
+    margin-top: 5px;
+}
+.main_navigation .nav_item_content {
+    font-size: 14px;
+    padding: initial;
+}   
+.main_navigation .nav_item_content li {
+    padding: 8px 12px 8px 12px;
+    width: 90%;
+    cursor: pointer;
+}
+#sticky_footer {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(64, 157, 120);
+    text-align: center;
+}
+#sticky_footer a {
+    color: white;
+}
+.next_previous a {
+    font-weight: 600;
+}
+.next_previous .category {
+    color: #637282;
+}
+hr {
+    border-bottom: 0.5px solid #a8a8a8;
+    border-top: none;
+}
+.subheader {
+    background: rgba(247,247,247);
+    padding: 10px;
+    font-weight: 600;
+    border-top: 1px solid rgba(232,232,232,1);
+}
+.subheader .nav_item_content li a {
+    font-size: 11px;
+}
+.subheader_inner {
+    max-width: 70em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.related_title {
+    font-weight: 600;
+}
+.footer_logo {
+    margin-bottom: 10px;
+}
+.nav_item {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+.nav_item button {
+    font-size: 13px;
+}
+.subheader .nav_item_content {
+    padding: 15px;
+    min-width: 200px;
+}
+button {
+    cursor: pointer;
+}
+.see-all {
+    color: black;
+}
+.first_footer_column li {
+    margin-bottom: 7.5px;
+}
+.first_footer_column li a {
+    color: black;
+}
+.first_footer_column img {
+    margin-top: 10px;
+}
+.subheader a:hover, .nav_item a:hover, .home_item a:hover {
+    color: darkgrey;
+}
+.home_item a:hover::before {
+    content: "› ";
+}
+footer a:hover, .header_links a:hover {
+    color: black;
+}
+.nav_item_content {
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    padding: 18px 30px;
+    -moz-box-shadow: 0 2px 1px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 1px rgb(0 0 0 / 25%);
+    box-shadow: 0 2px 1px rgb(0 0 0 / 25%);
+    text-align: left;
+    min-width: 200px;
+}
+.nav_item_content li {
+    font-weight: initial;
+    padding-bottom: 7px;
+}
+
+.hover_nav:hover {
+    background-color: #f9f9f9;
+}
+.sidebar h2 {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+p {
+    color: #1B2733;
+    font-size: 17px;
+    line-height: 1.7em;
+}
+#fast_track_modal h2 {
+    font-size: 16px;
+}
+#fast_track_modal p {
+    font-size: 12px;
+}
+@media screen and (max-width: 750px) {
+    #fast_track_modal h2 {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    #fast_track_modal p {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+     #fast_track_modal input, select {
+        height: 30px;
+        padding: 5px 10px !important;
+    }
+    input#phone_number_modal {
+        padding-left: 48px !important;
+    }
+}
+figure {
+    text-align: center;
+}
+figure figcaption {
+    color: #637282;
+}
+article img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+}
+.category_list li {
+    padding-bottom: 20px;
+    padding: 10px;
+}
+.bold {
+    font-weight: 600;
+}
+.category_list li:hover {
+    background-color: #f5f5f5;
+}
+pre {
+    padding: 10px;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.header_links {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    max-width: 70em;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.header_links ul {
+    margin-right: 20px;
+    text-align: left;
+}
+.header_links:last-child {
+    flex: 1;
+}
+#open_menu {
+    float: right;
+    margin-right: 20px;
+}
+header {
+    min-height: 400px;
+    background-color: #f6fafe;
+    text-align: center;
+}
+h1 {
+    font-size: 42px;
+    line-height: 1.2em;
+}
+header h1 {
+    margin-top: 0;
+    padding-top: 100px;
+}
+h3 a {
+    font-weight: 600;
+}
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    margin-top: -15px;
+}
+nav img {
+    margin-left: 10px;
+}
+#mobile_nav {
+    display: none;
+}
+#mobile_footer {
+    display: none;
+    text-align: center;
+}
+#fast_track_modal {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+#close-modal {
+    cursor: pointer;
+    float: right;
+    color: black;
+    position: absolute;
+    z-index: 9999;
+    text-align: center;
+    width: 18px;
+    height: 20px;
+    right: -80px;
+    top: 10px;
+    background-color: hsla(0,0%,100%,.6);
+    border: 0;
+    border-radius: 50%;
+    padding: 1px;
+}
+.error {
+    text-align: center;
+    min-height: 50vh;
+}
+.error h1 {
+    margin-top: 200px;
+}
+.center {
+    text-align: center;
+}
+.modal_contents {
+    background-color: white;
+    display: flex;
+    height: auto;
+    max-height: 657px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 4em;
+    position: relative;
+
+}
+@media screen and (max-height: 750px) {
+    .modal_contents {
+        margin-top: 20px;
+    }
+}
+.modal_text {
+    flex: 0 50%;
+    padding: 20px;
+    background: white;
+    z-index: 2;
+}
+.modal_text p, .modal_text h2 {
+    text-align: center;
+}
+.modal_text img {
+    display: block;
+    margin: auto;
+    height: 50px;
+}
+.modal_image {
+    /*flex: 1;*/
+    max-width: 1px;
+    margin-left: -40px;
+}
+.modal_image img {
+    height: 100%;
+    max-width: fit-content;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: rgba(88 102 116);
+    font-size: 16px;
+}
+.pagination li {
+    float: left;
+    padding: 10px;
+}
+.pagination a {
+    color: black;
+}
+.pagination_focused {
+    background: rgb(164,166,169);
+    border-radius: 7px;
+    border: 1px solid rgba(164,166,169);
+}
+.pagination_focused a {
+    color: white;
+}
+.highlight {
+    box-shadow: inset 0 -5px 0 #ffec54 !important;
+}
+.avatar_list img {
+    max-width: 100%;
+    border-radius: 100px;
+}
+label {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #637282;
+}
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    min-height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d8d8d8;
+    color: #1b2733;
+}
+#get_matched {
+    text-transform: uppercase;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+}
+.sitemap ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.back, .inner_logo {
+    display: none;
+}
+.view-all {
+    margin-top: 7.5px;
+    color: rgb(60, 145, 230);
+}
+.nav_header {
+    font-weight: 600 !important;
+}
+.nav_item_inner {
+    background-color: white;
+    flex: 1;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: none;
+}
+.hover_nav {
+    padding: 15px;
+    min-width: 200px;
+}
+.nav_item_inner {
+    padding-bottom: 10px;
+    min-width: 300px;
+}
+.iti--allow-dropdown {
+    width: 100%;
+}
+footer li {
+    line-height: 1.5;
+}
+.new-banner {
+    background-color: rgb(64,157,120);
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+    position: relative; 
+    top: initial; 
+    width: 100%; 
+    height: 60px; 
+    z-index: 1;
+    display: none;
+}
+.new-banner p {
+    color: white;
+    margin: 0;
+}
+.new-banner button {
+    margin-left: 30px;
+    background-color: #FFF;
+    border: none;
+    color: #000;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.new-banner #green_banner_x {
+    color: white;
+    margin-right: 7px;
+    margin-top: 7px;
+    position: absolute;
+    right: 0;
+    background: rgb(201 201 201 / 40%);
+    padding: 5px 7px;
+    border-radius: 50px;
+    font-size: 10px;
+}
+nav {
+    margin-top: 15px;
+}
+#green-banner-get-matched-button {
+    margin-left: 20px;
+    margin-top: -3px;
+    background-color: #FFF;
+    border: none;
+    color: #000;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.course-info-table tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+.course-info-table td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+table {
+    border-collapse: collapse;
+}
+figure {
+    margin: 0;
+    overflow-x: auto;
+    max-width: 700px !important;
+}
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+}
+.footer_lists ul li a {
+    cursor: pointer;
+    color: rgb(99, 114, 130);
+    font-size: 14px;
+    line-height: 13px;
+    margin-bottom: 10px;
+}
+.iti::before, .iti__flag-container::before, .iti__country-list::before, .iti__country::before, .iti__divider::before {
+    list-style: none !important;
+    content: none !important;
+    counter-increment: none !important;
+    counter-reset: initial !important;
+}
+.logo {
+    list-style-type: none;
+}
+iframe {
+    max-width: 100%;
+}
+.wp-block-spacer {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .sidebar, .bi-chevron-right, #desktop_footer, .subheader, .modal_image img, .home_item, .sponsored_content_list, .ad7 img, .modal_image {
+        display: none;
+    }
+    .modal_contents {
+        max-height: 100%;
+    }
+    #desktop_nav .nav_inner .main_navigation, #sticky_footer, .nav_item, .footer_inner, .back, #mobile_nav, #mobile_footer {
+        display: block;
+    }
+    #desktop_nav {
+        box-shadow: 0 100px 100px 100px rgba(0,0,0,.12),0 6px 16px 0 rgba(0,0,0,.08),0 9px 28px 8px rgba(0,0,0,.05);
+    }
+    .query_class_embed {
+        display: block !important;
+    }
+    .query_class_embed_item {
+        margin-bottom: 10px;
+    }
+    #desktop_nav, .nav_item_content, .hover_nav, .nav_item_inner {
+        display: none;
+        height: 100%;
+        width: 280px;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-right: 1px solid lightgrey;
+        background-color: white;
+        padding: 10px;
+        font-size: 20px;
+        transition: all 0.5s;
+        min-width: 0;
+    }
+    .nav_item_content, .hover_nav, .nav_item_inner {
+        box-shadow: none !important;
+    }
+    #desktop_nav li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: 1px solid lightgrey;
+    }
+    #desktop_nav, .nav_item_content, .hover_nav, .nav_item_inner, button {
+        font-size: 16px !important;
+    }
+    .nav_item_inner {
+        background-color: none;
+        z-index: 2;
+    }
+    #close-modal {
+        right: 20px;
+    }
+    #mobile_footer li {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .modal_contents {
+        margin: 5%;
+        width: initial;
+        border-radius: 10px;
+    }
+    .ad7 ul li {
+        margin-bottom: 10px !important;
+        margin-top: 20px !important;
+        line-height: 0.9 !important;
+    }
+    .modal_text {
+        flex: 0 100%;
+        padding: 30px;
+    }
+    .category_section_sidebar {
+        order: 1;
+    }
+    .main {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .sponsored_content_list li {
+        width: 100%;
+    }
+    #mobile_footer li a {
+        color: black !important;
+    }
+    .next_previous {
+        display: block !important;
+    }
+    .header_links ul {
+        text-align: center;
+    }
+    .header_links li {
+        margin-bottom: 5px;
+    }
+    .inner_logo {
+        padding-top: 10px;
+        display: block;
+    }
+    .ad7 {
+        display: block !important;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .breadcrumbs {
+        font-size: 12px !important;
+    }
+    #mobile_nav {
+        box-shadow: rgb(219 219 219) 0px 1px 0px 0px;
+        padding-bottom: 15px;
+    }
+    .new-banner {
+        display: none !important;
+    }
+    #desktop_nav {
+        margin-top: 0 !important;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .query_class_embed {
+        display: block;
+    }
+}
+/* skip link hiding code from https://www.a11ymatters.com/pattern/skip-link/ */
+.accessibility_label_top {
+    position: fixed;
+    top: -200px;
+}
+.accessibility_label_top:focus {
+	top: 0;
+	left: 50%;
+	padding: 10px;
+    text-align: center;
+    display: block; 
+    background-color: darkgreen;
+    color: white;
+}
+.accessibility_label {
+	position: fixed;
+	bottom: -200px;
+}
+.accessibility_label:focus {
+	bottom: 0 !important;
+	left: 50%;
+	padding: 10px;
+	z-index: 2;
+    text-align: center;
+    display: block; 
+    background-color: darkgreen;
+    color: white;
+}

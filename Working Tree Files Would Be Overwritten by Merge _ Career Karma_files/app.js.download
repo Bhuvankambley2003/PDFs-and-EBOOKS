@@ -1,0 +1,492 @@
+var h1 = document.getElementsByTagName('h1')[0].innerText;
+if (document.getElementById('category')) {
+	var category = document.getElementById('category').value;
+} else {
+	var category = "";
+}
+
+var bootcamp_in_focus = "";
+
+//on load page
+window.onload=function(){
+	checkGreenBanner();
+}
+
+function setCTA (bootcamp_name) {
+	bootcamp_in_focus = bootcamp_name;
+}
+
+function select (selector) {
+	return document.querySelector(selector);
+}
+
+function iterate_toggle(element_id, item_id) {
+	var nav_items = document.getElementsByClassName(item_id);
+	for (var i = 0; i < nav_items.length; i++) {
+		if (nav_items[i].id != element_id) {
+			nav_items[i].style.display = 'none';
+		}
+	}
+}
+
+function toggle(element_id, display = "block", class_or_id = "id") {
+	iterate_toggle(element_id, 'nav_item_inner');
+	if (class_or_id === "id") {
+		var nav_bar = document.getElementById(element_id);
+	} else {
+		var nav_bar = document.getElementsByClassName(element_id)[0];
+	}
+	if (!display || nav_bar.style.display == "block") {
+		nav_bar.style.display = "none";
+	} else {
+		nav_bar.style.display = display;
+	}
+}
+
+function close_modal() {
+	toggle('fast_track_modal', 'none');
+	setCookie('modal-closed','off',20);
+	window.dataLayer = window.dataLayer || [];
+		dataLayer.push({
+		'event': 'blog_modal_closed',
+		'cta_type': 'FastTrack',
+		'cta_name': 'Modal'
+	});
+}
+
+function show_list(id, display, secondary = null) {
+	iterate_toggle(id, 'nav_item_content');
+	toggle(id, display);
+	if (secondary != null && window.innerWidth > 768) {
+		toggle(secondary, "block");
+	}
+}
+
+var segmentEventLocal = (function() {
+	/*vars*/
+	const currentUrl = document.URL;
+	var categoryName = document.getElementById("category").innerText;
+	var category = document.URL.split("/")[4];
+	var article = document.getElementsByTagName('h1')[0].innerText;
+
+	var referrer = document.referrer;
+	referrer = referrer.replace("https://", "");
+	referrer = referrer.replace("http://", "");
+	referrer = referrer.split('/')[0];
+
+	return {
+		stickyFooter: function(buttonType) {
+            analytics.track("Blog - Sticky Footer Clicked", {
+                time: Date.now(),
+                header: 'Jump start your tech career',
+                subHeader: 'Learn the most in-demand skills',
+                button: buttonType,
+                url: currentUrl,
+                article: article, 
+                category: categoryName
+            });
+        },
+		GaEvent(text, name, eventName) {
+			var pathName = window.location.pathname.replace(/\//g, "");
+			var referrer = document.referrer;
+			referrer = referrer.replace("https://", "");
+			referrer = referrer.replace("http://", "");
+			referrer = referrer.split('/')[0];
+			gtag('event', eventName, {
+				cta_type: 'fasttrack',
+				cta_name: name,
+				cta_text: text,
+				page_url: document.URL,
+				page_path: pathName,
+				referrer: referrer,
+			});
+		},
+		whatsNext: function(eventName, textEvent, ctaType, header = "", subheader = "", button = "", ctaLink = "") {
+			analytics.track(eventName, {
+				time: Date.now(),
+				ctaType: ctaType,
+				ctaText: textEvent,
+				url: currentUrl,
+				article: article,
+				category: category,
+				referrer: referrer,
+				source: "blog",
+				initialReferralSource: localStorage.getItem("initialReferralSource"),
+				header: header,
+				subheader: subheader,
+				button: button,
+				ctaLink: ctaLink,
+			});
+		},
+		stickyBar: function(textEvent) {
+            analytics.track("Blog - FastTrack CTA Clicked", {
+                time: Date.now(),
+                ctaType: 'Sticky Widget: Find the Best Online Course for You',
+                ctaText: textEvent,
+                url: currentUrl,           
+                article: article, 
+                category: category,
+                referrer: referrer,
+                initialReferralSource: localStorage.getItem("initialReferralSource")
+            });
+        },
+		inArticle: function(textEvent) {
+            analytics.track("Blog - FastTrack CTA Clicked", {
+                time: Date.now(),
+                ctaType: 'In-Article Written',
+                ctaText: textEvent,
+                url: currentUrl,           
+                article: article, 
+                category: category,
+                referrer: referrer,
+                initialReferralSource: localStorage.getItem("initialReferralSource")
+            });
+        },
+		topBanner: function(eventName, textEvent, ctaType, header = "", subheader = "", button = "", ctaLink = "") {
+			analytics.track(eventName, {
+				time: Date.now(),
+				ctaType: ctaType,
+				ctaText: textEvent,
+				url: currentUrl,
+				article: document.getElementsByTagName('h1')[0].innerText,
+				category: category,
+				referrer: referrer,
+				source: "blog",
+				initialReferralSource: localStorage.getItem("initialReferralSource"),
+				header: header,
+				subheader: subheader
+			});
+		},
+		whatsNext2: function(eventName, textEvent, ctaType, header = "", subheader = "", button = "", ctaLink = "") {
+			analytics.track(eventName, {
+				time: Date.now(),
+				ctaType: ctaType,
+				ctaText: textEvent,
+				url: currentUrl,
+				article: article,
+				category: category,
+				referrer: referrer,
+				source: "blog",
+				initialReferralSource: localStorage.getItem("initialReferralSource"),
+				header: header,
+				subheader: subheader,
+			});
+		},
+		greenBarResearch: function() {
+			analytics.track('Blog - CTA Clicked', {
+				article: article,
+				category: category,
+				ctaName: 'Top Banner',
+				ctaText: 'Join Research Panel',
+				ctaType: 'Research Panel',
+				initialReferralSource: localStorage.getItem("initialReferralSource"),
+				referrer: referrer,
+				time: Date.now(),
+				url: currentUrl
+			  });
+		},
+	};
+})();
+
+// form field handler
+var item = document.getElementById('phone_number_modal');
+var phone_number_modal1 = document.getElementById('phone_number');
+
+function submit_modal(form_type = "_modal") {
+	
+	var error = document.getElementById('error' + form_type);
+
+	segmentEventLocal.GaEvent("Blog Modal Click Attempt", "blog_modal_click_attempt", "blog_modal_click_attempt");
+
+	var phoneInput = document.getElementById('phone_number_modal');
+	var phoneInput23 = document.getElementById('phone_number');
+	
+	if (form_type == "_modal") {
+		var phone_number = phoneInput.value;
+	} else {
+		var phone_number = phoneInput23.value;
+	}
+
+	var first_name = document.getElementById('first_name' + form_type).value;
+	var second_name = document.getElementById('second_name' + form_type).value;
+	var email = document.getElementById('email' + form_type).value;
+	var interest = document.getElementById('interest' + form_type).value;
+	
+	if (first_name == "" || second_name == "" || email == "" || phone_number == "" || interest == "") {
+		error.innerText = "Please fill in all fields";
+		error.style.display = "block";
+		error.style.color = "red";
+	} else if (!phone_number.startsWith("+1") && !phone_number.startsWith("+91")) {
+		error.innerText = "Please enter a valid U.S. phone number";
+		error.style.display = "block";
+		error.style.color = "red";
+	} else if (!email.includes("@") || !email.includes(".")) {
+		error.innerText = "Please enter a valid email address";
+		error.style.display = "block";
+		error.style.color = "red";
+	} else if (phone_number.length < 14) {
+		error.innerText = "Please enter a valid phone number";
+		error.style.display = "block";
+		error .style.color = "red";
+	} else {
+		error.innerText = "";
+	}
+	
+	if(error.innerText != ""){
+		error_msgs_ga_events(error,form_type);
+		return false;
+	}
+	
+	
+	error.style.display = "none";
+	
+	// strip any characters that are not + or digits
+	phone_number = phone_number.replace(/[^\d+]/g, '');
+
+	var campaign = "";
+
+	if (form_type == "_modal") {
+		campaign = "blog-modal-cta";
+	} else {
+		campaign = "ft-express-wgt-blog";
+	}
+	
+	var query_string = 	"?interest=" + interest 
+						+ "&first_name=" + first_name 
+						+ "&last_name=" + second_name 
+						+ "&email=" + email 
+						+ "&phone_number=" + phone_number 
+						+ "&ck_source=careerkarma-web" 
+						+ "&ck_medium=blog" 
+						+ "&ck_campaign=" + campaign 
+						+ "&ck_content=modalCTA" + "&flow=sft";
+
+	if (bootcamp_in_focus != "") {
+		query_string = query_string + "&school=" + bootcamp_in_focus;
+	} 
+						
+	window.dataLayer = window.dataLayer || [];
+	dataLayer.push({
+		'event': 'blog_modal_clicked',
+		'action_type': 'submit'
+	});
+
+	window.open("https://careerkarma.com/fasttrack/sign-up/" + query_string, "_blank");
+	
+	if (form_type == "_modal") {
+		segmentEventLocal.whatsNext("Blog - Modal Main Button Clicked", "", "", header = 'Jump start your tech career', subheader = 'Learn the most in-demand skills', button = "Find a top-rated training program");
+		toggle('fast_track_modal');
+	}
+	
+}
+
+var modal_form = document.querySelector("#fast_track_modal");
+    modal_form.addEventListener("click", check_modal_inputs, false);
+
+var modal_form = document.querySelector("#ad7_form");
+    modal_form.addEventListener("click", check_modal_inputs, false);
+
+function check_modal_inputs(e) {
+	if (e.target !== e.currentTarget) {
+		if(e.srcElement.localName == 'input' || e.srcElement.localName == 'select'){
+			var parent_class = e.target.parentNode.parentNode.classList.value;
+			on_click_ga_events( e.target.id, parent_class);
+		}
+	}
+	e.stopPropagation();
+}
+
+function on_click_ga_events(target, parent_class){
+	if(parent_class == "modal_contents") {
+		var cta_name = "Modal"; 
+	} else {
+		cta_name = "Ad7: Get Offers And Scholarships";
+	}
+	let field_name = "";
+	if(target == "first_name_modal" || target == "first_name") {
+		field_name = "first_name";
+	} else if(target == "second_name_modal" || target == "second_name") {
+		field_name = "last_name";
+	} else if(target == "email_modal" || target == "email") {
+		field_name = "email";
+	} else if(target == "phone_number_modal" || target == "phone_number"){
+		field_name = "phone_number";
+	}
+
+	window.dataLayer = window.dataLayer || [];
+		dataLayer.push({
+		'event': 'input_field_focused',
+		'cta_type': 'FastTrack',
+		'cta_name': cta_name,
+		'field_name': field_name,
+	});
+}
+
+function error_msgs_ga_events(error, type = "") {
+	let field_name = "";
+
+	if(error.innerText == "Please fill in all fields"){
+		var first_name = document.getElementById('first_name_modal').value;
+		var second_name = document.getElementById('second_name_modal').value;
+		var email = document.getElementById('email_modal').value;
+		var phone = document.getElementById('phone_number_modal').value;
+		
+		if(first_name == ""){
+			field_name = "first_name";
+		}
+		if(second_name == ""){
+			field_name = "last_name";
+		}
+		if(email == ""){
+			field_name = "email";
+		}
+		if(phone == ""){
+			field_name = "phone_number";
+		}
+	}
+
+	if(error.innerText == "Please enter a valid U.S. phone number" || error.innerText == "Please enter a valid phone number"){
+		field_name = "phone_number";
+	}
+	if(error.innerText == "Please enter a valid email address"){
+		field_name = "email";
+	}
+
+	if(type == "_modal") {
+		var cta_name = "Modal";
+	} else {
+		var cta_name = "Ad7: Get Offers And Scholarships";
+	}
+
+    if(field_name != ''){
+       window.dataLayer = window.dataLayer || [];
+          dataLayer.push({
+          'event': 'cta_validation_error_showed',
+          'cta_type': 'FastTrack',
+          'cta_name': cta_name,
+          'field_name': field_name,
+          'error_text': error.innerText
+        });
+    }
+}  
+
+function toggle_modal(open_from) {
+	/*GA event*/
+	window.dataLayer = window.dataLayer || [];
+		dataLayer.push({
+		'event': 'blog_modal_showed',
+	});
+	
+	if (open_from == "sidebar_image") {
+		segmentEventLocal.stickyBar("GIF image");
+	} else if (open_from == "sidebar_button") {
+        segmentEventLocal.stickyBar("Get Matched");
+	} else if (open_from == "testimonial") {
+        segmentEventLocal.whatsNext("Blog - FastTrack CTA Clicked", "", "", header = 'Testimonial Text', button = "Find your bootcamp match", ctaType = "Testimonials")
+	} else if (open_from == "banner") {
+		segmentEventLocal.topBanner("Blog - CTA Clicked", "Top banner", "Learn more", ctaType = "Main CTA")
+	}
+	toggle("fast_track_modal");
+}
+
+function whats_next_click(destination, header, subheader) {
+	segmentEventLocal.whatsNext2("Blog - FastTrack CTA Clicked", "Get Matched with top bootcamps", "Get Matched with top bootcamps", header = header, subheader = subheader);
+	segmentEventLocal.GaEvent("Get Matched with top bootcamps", "Get Matched with top bootcamps", 'fasttrack');
+
+	if (destination == "home") {
+		window.open("https://careerkarma.com/");
+	} else if (destination == "quiz") {
+		window.open("https://careerkarma.com/quiz/");
+	} else if (destination == "community") {
+		window.open("https://careerkarma.com/?utm_campaign=ck-blog&utm_source=whatsnext");
+	}
+}
+
+function ad_7_click() {
+	segmentEventLocal.whatsNext("Blog - FastTrack CTA Clicked", "See your matches", "Get Offers and Scholarships");
+	submit_modal('');
+}
+
+function toggle_mobile_footer() {
+	segmentEventLocal.whatsNext("Blog - Sticky Footer Clicked", "See your matches", "Get Offers and Scholarships", header = 'Jump start your tech career', subheader = 'Learn the most in-demand skills', button = "Find a top-rated training program");
+	toggle_modal();
+}
+
+function click_on_triplebyte_cta() {
+	segmentEventLocal.whatsNext("Blog - Third Party CTA Clicked", "Take the quiz", "Link inside article", ctaLink = "https://triplebyte.com/a/Lj5yXN8/8");
+	window.open("https://triplebyte.com/a/Lj5yXN8/8", "_blank");
+}
+
+function decodeJwtResponse(token) {
+  var base64Url = token.split('.')[1];
+  var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+  var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+	  return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+
+  return JSON.parse(jsonPayload);
+}
+
+function accordion(item_id) {
+	toggle("accordion-content content" + item_id, display = "block", class_or_id = "class");
+}
+
+function collapseAllAccordions() {
+	var accordion_content = document.getElementsByClassName("accordion-content");
+	for (var i = 0; i < accordion_content.length; i++) {
+		if (i != 0) {
+			accordion_content[i].style.display = "none";
+		}
+	}
+}
+
+// hide all accordions after 5 seconds
+setTimeout(collapseAllAccordions, 5000);
+
+function expandAllAccordions() {
+	var accordion_content = document.getElementsByClassName("accordion-content");
+	for (var i = 0; i < accordion_content.length; i++) {
+		accordion_content[i].style.display = "block";
+	}
+}
+
+function checkGreenBanner(){
+	if(getCookie('green-banner') == false){
+		document.getElementById("green-banner").style.display = "block";
+	}
+}
+
+function closeGreenBanner(){
+	document.getElementById("green-banner").style.display = "none";
+	setCookie('green-banner','off',15);
+}
+
+function setCookie(name, value, days) {
+    var date, expires;
+    if (days) {
+        date = new Date();
+        date.setDate(date.getDate()+days);
+        expires = "; expires="+date.toUTCString();
+    } else {
+        expires = "";
+    }
+    document.cookie = name+"="+value+expires+"; path=/";
+}
+
+
+window.onscroll = function() {sticky_banner_trigger()};
+
+// Get the header
+var header = document.getElementById("green-banner");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function sticky_banner_trigger() {
+	if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	} else {
+		header.classList.remove("sticky");
+	}
+}
